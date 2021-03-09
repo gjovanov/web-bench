@@ -1,4 +1,4 @@
-const files = ['specs/ping/dotnet/**/*.spec.js']
+const files = ['specs/ping/*.spec.js']
 
 export default {
   files,
