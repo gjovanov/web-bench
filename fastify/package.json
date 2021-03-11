@@ -9,12 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "fastify": "^3.13.0",
     "middie": "^5.2.0",
     "node-expose-sspi": "^0.1.55"
-=======
-    "fastify": "^3.13.0"
->>>>>>> 5690ea7847285aa3954bc9708258d3caba81d356
   }
 }

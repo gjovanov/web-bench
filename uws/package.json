@@ -9,14 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "cookie": "^0.4.1",
     "fast-json-stringify": "^2.5.1",
     "fluent-schema": "^1.1.0",
     "nanoid": "^3.1.20",
     "node-expose-sspi": "^0.1.55",
-=======
->>>>>>> 5690ea7847285aa3954bc9708258d3caba81d356
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v18.14.0"
   },
   "devDependencies": {

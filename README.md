@@ -29,7 +29,6 @@ npm i
 npm run start
 ```
 
-<<<<<<< HEAD
 # Start Nanoexpress.js
 ```bash
 cd nanoexpress
@@ -37,8 +36,6 @@ npm i
 npm run start
 ```
 
-=======
->>>>>>> 5690ea7847285aa3954bc9708258d3caba81d356
 # Run benchmark tests
 ```bash
 cd test
@@ -61,9 +58,6 @@ ok 3 - ping-fastify
 express
 ok 4 - ping-express
 { average: 6731.34, sent: 22752, total: 20192 }
-<<<<<<< HEAD
 ok 5 - ping-nanoexpress
 { average: 47205.34, sent: 144128, total: 141568 }
-=======
->>>>>>> 5690ea7847285aa3954bc9708258d3caba81d356
 ```
