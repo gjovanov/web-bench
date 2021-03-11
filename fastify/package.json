@@ -1,0 +1,16 @@
+{
+  "name": "fastify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js --config nodemon.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.13.0",
+    "middie": "^5.2.0",
+    "node-expose-sspi": "^0.1.55"
+  }
+}
