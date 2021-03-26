@@ -7,7 +7,8 @@ class App {
 
     this.uws = uws
     this.config = config
-    this.server = config && config.key_file_name && config.cert_file_name ? uws.SSLApp(config) : uws.App()
+    this.protocol = config && config.key_file_name && config.cert_file_name ? 'https' : 'http'
+    this.server = this.protocol === 'https' ? uws.SSLApp(config) : uws.App()
     this.routes = []
 
     if (routes && routes.length) {

@@ -6,10 +6,10 @@ test('ping', async t => {
     const result = await autocannon({
       url: `http://localhost:${port}/api/ping`,
       method: 'GET',
-      connections: 10, // default
+      connections: 100, // default
       pipelining: 256, // default,
-      // workers: 2,
-      duration: 3 // default
+      workers: 4,
+      duration: 5 // default
     })
     console.log({
       average: result.requests.average,

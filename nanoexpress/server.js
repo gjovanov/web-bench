@@ -27,7 +27,7 @@ const authPromise = (ctx) => {
 // })
 
 // app.set('etag', false)
-app.get('/api/ping', (req, res) => {
+app.get('/api/ping', async (req, res) => {
   res.send('pong')
 })
 // app.get('/api/auth', async (req, res) => {

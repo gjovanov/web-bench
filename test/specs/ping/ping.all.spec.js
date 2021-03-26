@@ -2,6 +2,10 @@ const test = require('ava')
 const autocannon = require('autocannon')
 let port
 let servername
+const connections = 10
+const pipelining = 1024
+const workers = 4
+const duration = 5
 
 test.serial('ping-dotnet', async t => {
   try {
@@ -10,10 +14,10 @@ test.serial('ping-dotnet', async t => {
     const result = await autocannon({
       url: `http://localhost:${port}/api/ping`,
       method: 'GET',
-      connections: 10, // default
-      pipelining: 256, // default,
-      // workers: 2,
-      duration: 3 // default
+      connections,
+      pipelining,
+      workers,
+      duration
     })
     console.log(servername)
     console.log({
@@ -34,10 +38,10 @@ test.serial('ping-uws', async t => {
     const result = await autocannon({
       url: `http://localhost:${port}/api/ping`,
       method: 'GET',
-      connections: 10, // default
-      pipelining: 256, // default,
-      // workers: 2,
-      duration: 3 // default
+      connections,
+      pipelining,
+      workers,
+      duration
     })
     console.log(servername)
     console.log({
@@ -58,10 +62,10 @@ test.serial('ping-fastify', async t => {
     const result = await autocannon({
       url: `http://localhost:${port}/api/ping`,
       method: 'GET',
-      connections: 10, // default
-      pipelining: 256, // default,
-      // workers: 2,
-      duration: 3 // default
+      connections,
+      pipelining,
+      workers,
+      duration
     })
     console.log(servername)
     console.log({
@@ -82,10 +86,10 @@ test.serial('ping-express', async t => {
     const result = await autocannon({
       url: `http://localhost:${port}/api/ping`,
       method: 'GET',
-      connections: 10, // default
-      pipelining: 256, // default,
-      // workers: 2,
-      duration: 3 // default
+      connections,
+      pipelining,
+      workers,
+      duration
     })
     console.log(servername)
     console.log({
@@ -106,10 +110,10 @@ test.serial('ping-nanoexpress', async t => {
     const result = await autocannon({
       url: `http://localhost:${port}/api/ping`,
       method: 'GET',
-      connections: 10, // default
-      pipelining: 256, // default,
-      // workers: 2,
-      duration: 3 // default
+      connections,
+      pipelining,
+      workers,
+      duration
     })
     console.log(servername)
     console.log({

@@ -7,8 +7,8 @@ test('ping', async t => {
       url: `http://localhost:${port}/api/ping`,
       method: 'GET',
       connections: 10, // default
-      pipelining: 256, // default,
-      // workers: 2,
+      pipelining: 128, // default,
+      workers: 4,
       duration: 3 // default
     })
     console.log({

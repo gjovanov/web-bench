@@ -4,7 +4,7 @@
   "description": "",
   "main": "ava.config.js",
   "scripts": {
-    "test": "ava --tap --verbose"
+    "test": "ava --tap --timeout=100s --verbose"
   },
   "author": "",
   "license": "ISC",

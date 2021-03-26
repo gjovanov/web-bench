@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js --config nodemon.json"
+    "start": "cross-env EXPERIMENTAL_FASTCALL=1 nodemon server.js --config nodemon.json"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^7.0.3",
     "nanoexpress": "^2.4.9",
     "node-expose-sspi": "^0.1.55"
   }
